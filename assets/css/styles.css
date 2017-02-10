@@ -1,0 +1,164 @@
+@font-face {
+  font-family: 'neosansmedium';
+  src: url("../fonts/neosans-medium-webfont.woff2") format("woff2"), url("../fonts/neosans-medium-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+@font-face {
+  font-family: 'neosansregular';
+  src: url("../fonts/neosans-light-webfont.woff2") format("woff2"), url("../fonts/neosans-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+body {
+  background-color: #f7f6f2;
+  padding-bottom: 60px; }
+
+.nav-pills {
+  padding-top: 5px; }
+
+.navbar {
+  border-radius: 0;
+  margin-bottom: 0px;
+  min-height: 60px; }
+
+.navbar-brand {
+  padding: 0 0 0 15px;
+  position: absolute;
+  z-index: 2000; }
+  .navbar-brand img {
+    width: 280px; }
+
+.navbar-default {
+  background-color: transparent;
+  border-color: transparent; }
+
+.navbar-default .navbar-brand {
+  color: #fff; }
+
+.navbar-default .navbar-nav > li > a {
+  color: #e92076; }
+
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover,
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
+  color: #ffa400; }
+
+.navbar-right {
+  margin-top: 5px; }
+
+.sections {
+  margin-top: 40px; }
+
+.label-home {
+  font-family: 'neosansmedium', arial;
+  position: relative;
+  margin-top: -35px;
+  height: 35px;
+  max-width: 100%;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  font-weight: bold;
+  font-size: 0.9em; }
+  .label-home a {
+    color: #fff; }
+    .label-home a:hover {
+      color: #e92076;
+      text-decoration: none; }
+
+.sections-header {
+  position: relative; }
+
+footer {
+  margin-top: 20px;
+  background-color: #e92076;
+  padding: 5px;
+  font-size: 0.8em;
+  color: white; }
+  footer a {
+    color: white; }
+    footer a:hover {
+      color: white; }
+
+.banner {
+  border-radius: 10px;
+  overflow: hidden; }
+
+.card {
+  border: 1px solid gray;
+  padding: 10px;
+  position: relative;
+  margin-bottom: 30px;
+  border-radius: 10px; }
+  .card .like {
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    border: 1px solid gray;
+    border-radius: 0 6px 0 5px;
+    background-color: lightgray; }
+  .card .red {
+    color: #e92076; }
+  .card .white {
+    color: white; }
+  .card .gray {
+    color: gray; }
+  .card .btn {
+    color: gray; }
+  .card .title {
+    font-weight: bold; }
+  .card .author {
+    font-size: 0.8em; }
+  .card .enredo {
+    height: 120px;
+    font-size: 0.9em;
+    overflow-y: scroll; }
+
+.login {
+  margin-top: 60px; }
+
+#myModal {
+  margin-top: 100px; }
+
+.modal-backdrop {
+  background-color: #fff; }
+
+.modal-backdrop.in {
+  opacity: 0.8; }
+
+.enredos {
+  margin-top: 10px; }
+
+.boxEnredo {
+  height: 150px;
+  overflow-y: auto; }
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .navbar-brand img {
+    width: 370px; }
+
+  .label-home {
+    font-size: 1em;
+    margin-top: -35px;
+    height: 35px; } }
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .navbar-brand img {
+    width: 400px; }
+
+  .label-home {
+    font-size: 1.2em;
+    margin-top: -40px;
+    height: 40px; } }
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .navbar-brand img {
+    width: 400px; }
+
+  .label-home {
+    font-size: 1.4em;
+    margin-top: -40px;
+    height: 40px; } }
+
+/*# sourceMappingURL=styles.css.map */
