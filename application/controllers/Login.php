@@ -3,6 +3,11 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Login extends CI_Controller {
+    public function __construct() {
+        parent::__construct();
+        
+        $this->output->enable_profiler(false);
+    }
 
     public function index() {
         if ($this->input->post('login')) {
@@ -25,8 +30,7 @@ class Login extends CI_Controller {
                 
                 redirect('/');
             } else {
-                echo "erro";
-                //redirect('login/erro');
+                redirect('login/erro');
             }
         } else {
              $this->load->view('header_view');

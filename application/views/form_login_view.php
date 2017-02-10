@@ -16,7 +16,7 @@
                             <label for="data-de-nascimento">Data de Nascimento</label>
                             <input type="text" class="form-control" id="data-de-nascimento" name="data-de-nascimento" placeholder="00/00/0000" required="required">
                         </div>
-                        <input type="submit" name="login" class="btn btn-default" value="LOGIN">
+                        <input type="submit" name="login" class="btn btn-default" value="ENTRAR">
                     </form>
                 </div>
             </div>
