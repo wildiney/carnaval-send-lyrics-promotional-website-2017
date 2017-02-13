@@ -12,6 +12,20 @@ body {
   background-color: #f7f6f2;
   padding-bottom: 60px; }
 
+h1, h2, h3 {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #e92076; }
+
+h1 {
+  font-size: 24px; }
+
+h2 {
+  font-size: 18px; }
+
+h3 {
+  font-size: 14px; }
+
 .nav-pills {
   padding-top: 5px; }
 
@@ -50,11 +64,11 @@ body {
 .label-home {
   font-family: 'neosansmedium', arial;
   position: relative;
-  margin-top: -35px;
+  margin-top: 0px;
   height: 35px;
   max-width: 100%;
   padding: 10px;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: black;
   color: #fff;
   font-weight: bold;
   font-size: 0.9em; }
@@ -65,7 +79,8 @@ body {
       text-decoration: none; }
 
 .sections-header {
-  position: relative; }
+  position: relative;
+  margin-bottom: 15px; }
 
 footer {
   margin-top: 20px;
@@ -131,6 +146,9 @@ footer {
   height: 150px;
   overflow-y: auto; }
 
+.sb-60px {
+  margin-top: 60px; }
+
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
 /* Small devices (tablets, 768px and up) */
@@ -140,7 +158,6 @@ footer {
 
   .label-home {
     font-size: 1em;
-    margin-top: -35px;
     height: 35px; } }
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
@@ -149,7 +166,6 @@ footer {
 
   .label-home {
     font-size: 1.2em;
-    margin-top: -40px;
     height: 40px; } }
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
@@ -158,7 +174,6 @@ footer {
 
   .label-home {
     font-size: 1.4em;
-    margin-top: -40px;
     height: 40px; } }
 
 /*# sourceMappingURL=styles.css.map */

@@ -43,10 +43,6 @@ class Enredo extends CI_Controller {
                 }
             }
 
-            $dataNascimento = $this->input->post('data-de-nascimento');
-            $dataNascimento = str_replace(array("/", '.'), array("-"), $dataNascimento);
-            $date = new DateTime($dataNascimento);
-            $data['dataDeNascimento'] = $date->format('Y-m-d');
             $data['tituloEnredo'] = $this->input->post('titulo-enredo');
             $data['compositor'] = $this->input->post('compositor');
             $data['matricula'] = $this->input->post('matricula');
@@ -61,6 +57,12 @@ class Enredo extends CI_Controller {
             $this->load->view('enredo_enviado_view');
             $this->load->view('footer_view');
         } else {
+            $this->load->model("enredo_model");
+            $participante = $this->enredo_model->verificaParticipacao($this->session->userdata("matricula"));
+            if($participante){
+                redirect("/enredo/participante");
+            }
+                
             $this->load->view('header_view');
             $this->load->view('enredo_enviar_view');
             $this->load->view('footer_view');
@@ -71,17 +73,50 @@ class Enredo extends CI_Controller {
         $this->load->model("enredo_model");
         $data['resultados'] = $this->enredo_model->listApproved();
         
-        $this->load->view('header_view');
-        $this->load->view('enredo_votacao_view', $data);
-        $this->load->view('footer_view');
+        if($data['resultados']==false){
+            $this->load->view('header_view');
+            $this->load->view('enredo_votacao_indisponivel_view', $data);
+            $this->load->view('footer_view');
+        } else {
+            $this->load->view('header_view');
+            $this->load->view('enredo_votacao_view', $data);
+            $this->load->view('footer_view');
+        }
+    }
+    
+    public function ranking() {
+        $this->load->model("enredo_model");
+        $data['resultados'] = $this->enredo_model->listApproved('total desc');
+        
+        if($data['resultados']==false){
+            $this->load->view('header_view');
+            $this->load->view('enredo_votacao_indisponivel_view', $data);
+            $this->load->view('footer_view');
+        } else {
+            $this->load->view('header_view');
+            $this->load->view('enredo_ranking_view', $data);
+            $this->load->view('footer_view');
+        }
     }
 
     public function like($idEnredo) {
-        $data['matricula'] = $this->input->post("matricula");
+        if(!isset($idEnredo) || is_null($this->session->userdata("matricula"))){
+        $this->load->view('header_view');
+        $this->load->view('errolike_view');
+        $this->load->view('footer_view');
+        } else {
+        $data['matricula'] = $this->session->userdata("matricula");
         $data['idEnredo'] = $idEnredo;
         
         $this->load->model("voto_model");
         $this->voto_model->votar($data['idEnredo']);
+        }
+    }
+    
+    public function participante(){
+        $this->load->view('header_view');
+        $this->load->view('enredo_participante_view');
+        $this->load->view('footer_view');
         
     }
 

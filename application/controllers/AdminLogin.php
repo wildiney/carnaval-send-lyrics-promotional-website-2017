@@ -3,6 +3,11 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class AdminLogin extends CI_Controller {
+    public function __construct() {
+        parent::__construct();
+        
+        $this->output->enable_profiler(false);
+    }
 
     public function index() {
         if ($this->input->post('login')) {
@@ -20,11 +25,10 @@ class AdminLogin extends CI_Controller {
                 $this->session->set_userdata($data);
                 redirect('/admindashboard/');
             } else {
-                echo "erro";
-                //redirect('login/erro');
+                redirect('login/erro');
             }
         } else {
-             $this->load->view('header_view');
+            $this->load->view('header_view');
             $this->load->view('admin/form_login_view');
             $this->load->view('footer_view');
         }

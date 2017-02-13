@@ -7,7 +7,7 @@
                 </div>
                 <div class="panel-body">
                     <p>Para participar do concurso de Carnaval da Indra é necessário estar logado no site.</p>
-                    <form action="/admin" method="POST">
+                    <form action="/adminlogin" method="POST">
                         <div class="form-group">
                             <label for="email">EMAIL</label>
                             <input type="email" class="form-control" id="email" name="email" placeholder="EMAIL" required="required">

@@ -39,7 +39,7 @@ class Login extends CI_Controller {
         }
     }
     
-     public function logout() {
+    public function logout() {
         /**
          * Sessions Admins
          */

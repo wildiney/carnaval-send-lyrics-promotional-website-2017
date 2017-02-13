@@ -59,6 +59,8 @@
             </ul>
 
             <h2>Cronograma</h2>
+            <div class="row" style="background-color: lightgray; border-radius: 5px; margin-bottom: 20px;">
+                <div class="col-sm-12">
             <h3>Período de inscrição</h3>
             <p>13 a 24 de fevereiro</p>
             <h3>Período de votação no site </h3>
@@ -67,6 +69,9 @@
             <p>De 27 de fevereiro a 02 de março</p>
             <h3>Resultado </h3>
             <p>03 de março</p>
+                </div>
+            </div>
+            
             <p>Em caso de dúvidas e informações adicionais, entre em contato com Erik Silva, Marketing Brasil através do telefone 11 5186-3061 ou ersilva@indracompany.com</p>
             <p>Caia na folia conosco!</p>
 

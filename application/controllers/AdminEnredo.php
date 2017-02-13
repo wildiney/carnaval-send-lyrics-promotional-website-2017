@@ -2,7 +2,14 @@
 
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Enredo extends CI_Controller {
+class AdminEnredo extends CI_Controller {
+    public function __construct() {
+        parent::__construct();
+        
+        if(!$this->session->userdata('level')){
+            redirect("/adminlogin","refresh");
+        }
+    }
 
     public function index() {
         if ($this->input->post("idEnredo")) {
@@ -12,7 +19,7 @@ class Enredo extends CI_Controller {
             $this->load->model("enredo_model");
             $query = $this->enredo_model->changeStatus($idEnredo, $status);
             
-            redirect('/admin/dashboard');
+            redirect('/admindashboard/');
         } else {
             die("Erro");
         }

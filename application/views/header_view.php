@@ -13,6 +13,9 @@
         <?php echo (isset($scripts))? $scripts : ""; ?>
     </head>
     <body>
+        <!--[if lte IE 9]>
+            <p class="alert alert-warning">Você está usando um navegador <strong>desatualizado</strong>. Por favor, <a href="http://browsehappy.com/">atualize seu browser</a> para melhorar a sua experiência e segurança.</p>
+        <![endif]-->
         <nav class="navbar navbar-default">
             <div class="container">
                 <!-- Brand and toggle get grouped for better mobile display -->

@@ -19,10 +19,6 @@
                     <input type="text" class="form-control" id="compositor" name="compositor" readonly="readonly" value="<?php echo $this->session->userdata("nome"); ?>" placeholder=""  required="required">
                 </div>
                 <div class="form-group">
-                    <label for="data-de-nascimento">Data de Nascimento</label>
-                    <input type="date" class="form-control" id="data-de-nascimento" name="data-de-nascimento"  readonly="readonly" value="<?php echo $this->session->userdata("dataDeNascimento"); ?>" placeholder="00/00/0000" required="required">
-                </div>
-                <div class="form-group">
                     <label for="titulo-enredo">Título do Enredo</label>
                     <input type="text" class="form-control" id="titulo-enredo" name="titulo-enredo" placeholder=""  required="required">
                 </div>
@@ -43,14 +39,14 @@
                 </div>
                 <div class="checkbox">
                     <label>
-                        <input type="checkbox" id="aceite" name="aceite"  required="required"> Li e concordo com o <a href="/regulamento">regulamento</a> do concurso cultural
+                        <input type="checkbox" id="aceite" name="aceite" value="1"  required="required"> Li e concordo com o <a href="/regulamento">regulamento</a> do concurso cultural
                     </label>
                 </div>
             </div>
             <div class="col-sm-6">
                 <div class="form-group">
                     <label for="matricula">Enredo</label>
-                    <textarea class="form-control" id="enredo" name="enredo" placeholder="" rows="15"  required="required"></textarea>
+                    <textarea class="form-control" id="enredo" name="enredo" placeholder="" rows="12"  required="required" style="height: 260px"></textarea>
                 </div>
                 <input type="submit" name="participar" class="btn btn-default" value="PARTICIPAR">
             </div>
