@@ -26,7 +26,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="/"><img src="<?php echo base_url(); ?>assets/img/logo-carnaval.png" alt=""/></a>
+                    <a class="navbar-brand" href="/"></a>
                     
                 </div>
 
@@ -44,6 +44,9 @@
                             <a href="#" class="" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-lock" aria-hidden="true"></span> LOGIN</a>
                         </li>
                         <?php endif; ?>
+                        <li>
+                            
+                        </li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->

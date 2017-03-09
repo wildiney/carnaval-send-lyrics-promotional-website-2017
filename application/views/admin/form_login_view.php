@@ -6,8 +6,8 @@
                     <h3 class="panel-title">LOGIN ADMIN</h3>
                 </div>
                 <div class="panel-body">
-                    <p>Para participar do concurso de Carnaval da Indra é necessário estar logado no site.</p>
-                    <form action="/adminlogin" method="POST">
+                    <p>Olá administrador(a) utilize o seu email e a sua fantástica senha para logar no administrativo.</p>
+                    <form action="/AdminLogin" method="POST">
                         <div class="form-group">
                             <label for="email">EMAIL</label>
                             <input type="email" class="form-control" id="email" name="email" placeholder="EMAIL" required="required">

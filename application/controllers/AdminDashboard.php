@@ -9,7 +9,7 @@ class AdminDashboard extends CI_Controller {
         $this->output->enable_profiler(false);
         
         if(!$this->session->userdata('level')){
-            redirect("/adminlogin","refresh");
+            redirect("/AdminLogin","refresh");
         }
     }
 

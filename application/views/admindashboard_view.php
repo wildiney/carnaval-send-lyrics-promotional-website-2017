@@ -15,26 +15,31 @@
                         <input type="hidden" value="<?php echo $ependente->idEnredo ?>">
                         <tr>
                             <td style="width: 200px">
-                                <p><?php echo $ependente->tituloEnredo ?></p>
-                                <p><?php echo $ependente->compositor ?></p>
-                                <p><?php echo $ependente->cidade ?></p>
-                                <p><?php echo $ependente->created_at ?></p>
+                                <p><strong><?php echo $ependente->tituloEnredo ?></strong></p>
+                                <p><i><?php echo $ependente->compositor ?></i></p>
+                                <p><small><?php echo $ependente->cidade ?></small></p>
+                                <p><small><?php echo $ependente->created_at ?></small></p>
+                            </td>
+                            <td style="width: 250px">
+                                <?php if($ependente->imagemIlustrativa):?>
+                                <img src="<?php echo base_url() . $ependente->imagemIlustrativa; ?>" style="width:100%">
+                                <?php endif;?>
                             </td>
                             <td>
                                 <?php echo nl2br($ependente->enredo) ?>
                             </td>
                             <td style="width: 60px">
-                                <form action="/adminenredo/" method="POST">
+                                <form action="/AdminEnredo/" method="POST">
                                     <input hidden="idEnredo" name="idEnredo" value="<?php echo $ependente->idEnredo ?>">
                                     <input hidden="status" name="status" value="1">
-                                    <button type="submit" class="btn btn-success">Aprovar</button>
+                                    <button type="submit" class="btn btn-success"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></button>
                                 </form>
                             </td>
                             <td style="width: 60px">
-                                <form action="/adminenredo/" method="POST">
+                                <form action="/AdminEnredo/" method="POST">
                                     <input hidden="idEnredo" name="idEnredo" value="<?php echo $ependente->idEnredo ?>">
                                     <input hidden="status" name="status" value="2">
-                                    <button type="submit" class="btn btn-danger">Reprovar</button>
+                                    <button type="submit" class="btn btn-danger"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></button>
                                 </form>
                             </td>
                         </tr>

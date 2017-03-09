@@ -23,7 +23,7 @@ class AdminLogin extends CI_Controller {
                 }
 
                 $this->session->set_userdata($data);
-                redirect('/admindashboard/');
+                redirect('/AdminDashboard/');
             } else {
                 redirect('login/erro');
             }

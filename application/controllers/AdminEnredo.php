@@ -7,7 +7,7 @@ class AdminEnredo extends CI_Controller {
         parent::__construct();
         
         if(!$this->session->userdata('level')){
-            redirect("/adminlogin","refresh");
+            redirect("/AdminLogin","refresh");
         }
     }
 
@@ -19,7 +19,7 @@ class AdminEnredo extends CI_Controller {
             $this->load->model("enredo_model");
             $query = $this->enredo_model->changeStatus($idEnredo, $status);
             
-            redirect('/admindashboard/');
+            redirect('/AdminDashboard/');
         } else {
             die("Erro");
         }

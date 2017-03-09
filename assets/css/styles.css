@@ -35,7 +35,11 @@ h3 {
   min-height: 60px; }
 
 .navbar-brand {
-  padding: 0 0 0 15px;
+  width: 65%;
+  margin-left: 15px !important;
+  background: url("/assets/img/logo-carnaval.png") top left no-repeat;
+  background-size: auto 100%;
+  /*padding:0 0 0 15px;*/
   position: absolute;
   z-index: 2000; }
   .navbar-brand img {
@@ -54,6 +58,16 @@ h3 {
 .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
   color: #ffa400; }
+
+.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+  margin-left: 0; }
+
+.navbar-brand {
+  background-size: contain;
+  height: 80px;
+  margin-left: 0px; }
+  .navbar-brand img {
+    width: 500px; }
 
 .navbar-right {
   margin-top: 5px; }
@@ -153,24 +167,44 @@ footer {
 /* No media query since this is the default in Bootstrap */
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  .navbar-brand img {
-    width: 370px; }
+  .navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+    margin-left: 0; }
+
+  .navbar-brand {
+    width: 40%;
+    background-size: contain;
+    height: 60px;
+    margin-left: 0px; }
+    .navbar-brand img {
+      width: 370px; }
 
   .label-home {
     font-size: 1em;
     height: 35px; } }
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  .navbar-brand img {
-    width: 400px; }
+  .navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+    margin-left: 0; }
+
+  .navbar-brand {
+    background-size: contain;
+    height: 80px;
+    margin-left: 0px; }
+    .navbar-brand img {
+      width: 500px; }
 
   .label-home {
     font-size: 1.2em;
     height: 40px; } }
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-  .navbar-brand img {
-    width: 400px; }
+  .navbar-brand {
+    background-size: contain;
+    height: 80px;
+    padding-left: 20px;
+    margin-left: 0; }
+    .navbar-brand img {
+      width: 600px; }
 
   .label-home {
     font-size: 1.4em;

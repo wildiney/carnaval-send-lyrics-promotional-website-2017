@@ -12,10 +12,10 @@ class Enredo_model extends CI_Model {
     
     public function listAllPending(){
         $this->db->select();
-        $this->db->from('enredos');
-        $this->db->join('users','enredos.matricula = users.matricula' );
-        $this->db->where('status',null);
-        $this->db->order_by('enredos.created_at','desc');
+        $this->db->from('enredos as e');
+        $this->db->join('users as u','e.matricula = u.matricula' );
+        $this->db->where('e.status',null);
+        $this->db->order_by('e.created_at','desc');
         
         $query = $this->db->get();
         
