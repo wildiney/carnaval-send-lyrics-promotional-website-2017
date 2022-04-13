@@ -13,7 +13,7 @@
                 <img src="<?php echo base_url()?>assets/img/banner-enredo.jpg" width="100%" >
                 <div class="label-home text-center"><a href="/enredo/enviar">ENVIE SEU SAMBA-ENREDO</a></div>
             </div>
-            <p>Está aberto o IIº Concurso de Carnaval da Indra no Brasil!</p>
+            <p>Está aberto o IIº Concurso de Carnaval da Empresa no Brasil!</p>
             <p><strong>Se você pudesse criar o samba-enredo de uma escola, como  seria? </strong></p>
             <p>Escreva o seu SAMBA-ENREDO campeão e nos <a href="/enredo/enviar">envie</a>.</p>
         </div>

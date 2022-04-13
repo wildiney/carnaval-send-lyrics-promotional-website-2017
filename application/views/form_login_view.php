@@ -6,7 +6,7 @@
                     <h3 class="panel-title">LOGIN</h3>
                 </div>
                 <div class="panel-body">
-                    <p>Para participar do concurso de Carnaval da Indra é necessário estar logado no site.</p>
+                    <p>Para participar do concurso de Carnaval da Empresa é necessário estar logado no site.</p>
                     <form action="/login" method="POST">
                         <div class="form-group">
                             <label for="matricula">Matrícula</label>

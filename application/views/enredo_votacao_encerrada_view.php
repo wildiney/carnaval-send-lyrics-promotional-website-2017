@@ -8,7 +8,7 @@
                 <div class="panel-body">
                     <p>Obrigado pela sua participação.</p>
                     <p>Estamos apurando os votos e o resultado será divulgado até o dia 10 de março.</p>
-                    <p>Qualquer dúvida, entre em contato com <a href="mailto:communitybrasil@indracompany.com">communitybrasil@indracompany.com</a></p>
+                    <p>Qualquer dúvida, entre em contato com <a href="mailto:nome@dominio.com">nome@dominio.com</a></p>
                 </div>
             </div>
 

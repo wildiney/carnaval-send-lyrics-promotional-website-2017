@@ -14,15 +14,15 @@ class Email extends CI_Controller {
         $message .= "<p style='font-size:12px; font-family:Arial,sans-serif;'>O seu samba-enredo foi enviado para aprovação.</p>";
         $message .= "<p style='font-size:12px; font-family:Arial,sans-serif;'>Assim que aprovado, estará disponível para votação.</p>";
 
-        $headers = 'From: contato@carnavalnaindra.com.br' . "\r\n" .
-                'Reply-To: contato@carnavalnaindra.com.br' . "\r\n" .
+        $headers = 'From: contato@dominio.com.br' . "\r\n" .
+                'Reply-To: contato@dominio.com.br' . "\r\n" .
                 "MIME-Version: 1.0" . "\r\n" .
                 "Content-type: text/html; charset=UTF-8" . "\r\n" .
                 'Date:' . date('r');
 
 
 
-        if (mail('wfpimentel@indracompany.com', 'Teste', $message, $headers)) {
+        if (mail('nome@dominio.com', 'Teste', $message, $headers)) {
             print('Funcionou');
         } else {
             print('Nao Funcionou!');
@@ -45,12 +45,12 @@ class Email extends CI_Controller {
 
         # E-mail de destino. Caso seja mais de um destino, crie um array de e-mails.
         # *OBRIGATÓRIO*
-        $recipients = 'contato@carnavalnaindra.com.br';
+        $recipients = 'contato@dominio.com.br';
 
         # Cabeçalho do e-mail.
         $headers = array(
-                    'From' => 'contato@carnavalnaindra.com.br', # O 'From' é *OBRIGATÓRIO*.
-                    'To' => 'wfpimentel@indracompany.com',
+                    'From' => 'contato@dominio.com.br', # O 'From' é *OBRIGATÓRIO*.
+                    'To' => 'nome@dominio.com',
                     'Subject' => 'Teste',
                     'Date' => date('r')
         );
@@ -85,8 +85,8 @@ class Email extends CI_Controller {
         # Parâmetros para o SMTP. *OBRIGATÓRIO*
         $params = array(
                     'auth' => true, # Define que o SMTP requer autenticação.
-                    'host' => 'smtp.carnavalnaindra.com.br', # Servidor SMTP
-                    'username' => 'contato=carnavalnaindra.com.br', # Usuário do SMTP
+                    'host' => 'smtp.dominio.com.br', # Servidor SMTP
+                    'username' => 'contato=dominio.com.br', # Usuário do SMTP
                     'password' => 'ContatoCarnaval@2017' # Senha do seu MailBox.
         );
 

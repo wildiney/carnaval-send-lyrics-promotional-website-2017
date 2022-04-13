@@ -7,16 +7,16 @@ class Enredo extends CI_Controller {
     public function __construct() {
         parent::__construct();
 
-        if (!$this->session->userdata('logged')) {
-            redirect("/login", "refresh");
-        }
+        // if (!$this->session->userdata('logged')) {
+        //     redirect("/login", "refresh");
+        // }
 
         $this->output->enable_profiler(false);
     }
 
     public function enviar() {
         $date1 = date("Y-m-d");
-        $date2 = "2017-03-03";
+        $date2 = "2023-03-03";
 
         if (strtotime($date1) < strtotime($date2)) {
             if ($this->input->post('participar')) {
@@ -72,7 +72,7 @@ class Enredo extends CI_Controller {
 
                 $recipients = $this->session->userdata("email");
                 $headers = array(
-                    'From' => 'contato@carnavalnaindra.com.br', # O 'From' é *OBRIGATÓRIO*.
+                    'From' => 'contato@dominio.com.br', # O 'From' é *OBRIGATÓRIO*.
                     'To' => $this->session->userdata("email"),
                     'Subject' => 'Voce esta participando!',
                     //'Content-Type'  => 'text/html; charset=UTF-8',
@@ -97,9 +97,9 @@ class Enredo extends CI_Controller {
                 # Parâmetros para o SMTP. *OBRIGATÓRIO*
                 $params = array(
                     'auth' => true, # Define que o SMTP requer autenticação.
-                    'host' => 'smtp.carnavalnaindra.com.br', # Servidor SMTP
-                    'username' => 'contato=carnavalnaindra.com.br', # Usuário do SMTP
-                    'password' => 'ContatoCarnaval@2017' # Senha do seu MailBox.
+                    'host' => 'smtp.dominio.com.br', # Servidor SMTP
+                    'username' => 'contato=dominio.com.br', # Usuário do SMTP
+                    'password' => '' # Senha do seu MailBox.
                 );
 
                 # Define o método de envio

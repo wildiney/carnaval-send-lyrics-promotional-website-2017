@@ -7,7 +7,7 @@
                 </div>
                 <div class="panel-body">
                     <p>De acordo com o regulamento, somente é permitida a participação com um enredo.</p>
-                    <p>Se você não enviou o seu enredo ainda ou estiver com algum problema para enviar, entre em contato com <a href="mailto:communitybrasil@indracompany.com">communitybrasil@indracompany.com</a></p>
+                    <p>Se você não enviou o seu enredo ainda ou estiver com algum problema para enviar, entre em contato com <a href="mailto:nome@dominio.com">nome@dominio.com</a></p>
                 </div>
             </div>
 

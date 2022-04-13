@@ -9,10 +9,10 @@
     <div class="row">
 
         <div class="col-sm-10 col-sm-offset-1">
-            <h1>Saiu a Apuração do II Concurso de Carnaval da Indra</h1>
+            <h1>Saiu a Apuração do II Concurso de Carnaval da Empresa</h1>
             <p>Foram mais de 20 sambas-enredos compostos por sambistas de Brasília, Campos dos Goytacazes, São Paulo e Rio de Janeiro.</p>
             <p>O Brasil é o país do carnaval, isso é fato! E este ano, nossos profissionais provaram mais uma vez que além de foliões, são criativos! Recebemos mais de 20 sambas-enredos de profissionais alocados em vários projetos de Brasília, Campos dos Goytacazes, São Paulo e Rio de Janeiro.</p>
-            <p>675 jurados espalhados pelo país nos ajudaram a escolher os finalistas. E agora divulgamos os vencedores da 2ª edição do concurso de carnaval da Indra:</p>
+            <p>675 jurados espalhados pelo país nos ajudaram a escolher os finalistas. E agora divulgamos os vencedores da 2ª edição do concurso de carnaval da Empresa:</p>
             <ul>
                 <li>1º lugar: Leandro Gomes de Freitas, do Rio de Janeiro, com o Samba-enredo "Pega o meu código e compila"</li>
                 <li>2º lugar: Eder Taveira dos Santos, de Brasília,  com o samba "É lindo um sistema homologado na maior velocidade"</li>

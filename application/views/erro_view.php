@@ -7,7 +7,7 @@
                 </div>
                 <div class="panel-body">
                     <p>Login ou senha inválida.</p>
-                    <p>Se estiver com dificuldades para acessar o site, entre em contato com <a href="mailto:communitybrasil@indracompany.com">communitybrasil@indracompany.com</a></p>
+                    <p>Se estiver com dificuldades para acessar o site, entre em contato com <a href="mailto:nome@dominio.com">nome@dominio.com</a></p>
                     
                     <a class="btn btn-default" href="<?php echo base_url() . "login"?>">TENTAR NOVAMENTE</a>
                 </div>

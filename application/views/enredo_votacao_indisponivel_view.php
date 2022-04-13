@@ -8,7 +8,7 @@
                 <div class="panel-body">
                     <p>Ainda não existem enredos disponíveis para votação.</p>
                     <p>Se você já enviou o seu enredo, provavelmente ele ainda está sendo analisado pela nossa equipe para averiguar se antende aos requisitos descritos no regulamento, e tão logo seja liberado aparecerá aqui para votação.</p>
-                    <p>Qualquer dúvida, entre em contato com <a href="ersilva@indracompany.com">ersilva@indracompany.com</a></p>
+                    <p>Qualquer dúvida, entre em contato com <a href="nome@dominio.com">nome@dominio.com</a></p>
                 </div>
             </div>
 

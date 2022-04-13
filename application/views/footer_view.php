@@ -2,7 +2,7 @@
 <footer class="footer navbar-fixed-bottom">
     <div class="row">
         <div class="col-sm-12 text-center">
-            &copy 2017 - <a href="http://www.indracompany.com/pt-br/">indracompany.com</a>
+            &copy 2017 - <a href="http://www.empresa.com/pt-br/">empresa.com</a>
         </div>
     </div>
 </footer>

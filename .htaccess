@@ -15,7 +15,7 @@ SetEnv CI_ENV production
 
 php_flag authmail.debug Off
 php_value authmail.port 587
-php_value authmail.address contato@carnavalnaindra.com.br
-php_value authmail.smtp_account contato=carnavalnaindra.com.br
-php_value authmail.smtp smtp.carnavalnaindra.com.br
-php_value authmail.password 'ContatoCarnaval@2017' 
+php_value authmail.address nome@dominio.com.br
+php_value authmail.smtp_account contato=dominio.com.br
+php_value authmail.smtp smtp.dominio.com.br
+php_value authmail.password '' 
