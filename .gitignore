@@ -32,3 +32,4 @@ application/config/production/
 ci_sessions/
 *.env
 vendor
+data
