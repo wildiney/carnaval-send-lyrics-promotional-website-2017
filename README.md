@@ -12,4 +12,4 @@ This website was made for a campaing to employees send their musical for carniva
 
 ## Screenshots
 
-![screenshots](https://github.com/wildiney/carnaval-send-lyrics-promotional-website-2017/blob/master/screenshots/screenshot-01.png)
+![screenshots](https://github.com/wildiney/carnaval-send-lyrics-promotional-website-2017/blob/master/screenshots/screenshot-02.png)
